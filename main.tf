@@ -7,9 +7,9 @@ resource "scm_security_rule" "rules" {
   source            = each.value.source_addresses
   destination       = each.value.destination_addresses
   action            = each.value.action
-  application       = ["any"]
-  category          = ["any"]
-  service           = ["any"]
+  application       = each.value.application
+  category          = each.value.category
+  service           = each.value.service
   source_user       = each.value.source_users
   folder            = "Prisma Access"
   position          = "pre"
