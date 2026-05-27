@@ -19,7 +19,7 @@ Use at your own discretion.
 
 | Package   | Version |
 |-----------|---------|
-| terraform | 1.14.8  |
+| terraform | 1.15.5  |
 
 Note: This project has yet to be tested on OpenTofu.
 
