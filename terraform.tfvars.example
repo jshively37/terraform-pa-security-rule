@@ -9,6 +9,7 @@ policies = [
     action                = "allow"
     source_users          = ["user1", "user2"]
     application           = ["dropbox"]
+    relative_position     = "top"
   },
   {
     name                  = "Deny Dropbox"
