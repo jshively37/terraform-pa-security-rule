@@ -8,11 +8,11 @@ variable "policies" {
     destination_addresses = list(string)
     action                = string
     source_users          = list(string)
-    relative_position     = string
-    application           = list(string)
-    category              = list(string)
-    service               = list(string)
-    folder                = string
-    position              = string
+    relative_position     = optional(string)
+    application           = optional(list(string))
+    category              = optional(list(string))
+    service               = optional(list(string))
+    folder                = optional(string)
+    position              = optional(string)
   }))
 }
