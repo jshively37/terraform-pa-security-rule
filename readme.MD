@@ -16,7 +16,7 @@ Use at your own discretion.
 
 | Package   | Version |
 |-----------|---------|
-| terraform | 1.14.7  |
+| terraform | 1.14.8  |
 
 Note: This project has yet to be tested on OpenTofu.
 
@@ -32,6 +32,6 @@ To install Terraform, use the following link: https://developer.hashicorp.com/te
 
 ## Passing variables via a file
 * Create a `terraform.tfvars` file.
-  * `terraform.tfvars.example` is an example of the expected address group format.
+  * `terraform.tfvars.example` is an example of the expected policy format.
 * Run `terraform plan`.
 * If you are happy with the output run `terraform apply`.
