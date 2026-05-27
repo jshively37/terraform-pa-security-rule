@@ -1,5 +1,5 @@
 # Overview
-Terraform to manage address objects in Strata Cloud Managed Prisma Access.
+Terraform to manage security policies in Strata Cloud Managed Prisma Access.
 
 ## Disclaimer
 
