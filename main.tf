@@ -11,7 +11,7 @@ resource "scm_security_rule" "rules" {
   category          = each.value.category
   service           = each.value.service
   source_user       = each.value.source_users
-  folder            = "Prisma Access"
-  position          = "pre"
-  relative_position = coalesce(each.value.relative_position, "bottom")
+  folder            = each.value.folder
+  position          = each.value.position
+  relative_position = each.value.relative_position
 }

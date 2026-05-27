@@ -12,5 +12,7 @@ variable "policies" {
     application           = list(string)
     category              = list(string)
     service               = list(string)
+    folder                = string
+    position              = string
   }))
 }
