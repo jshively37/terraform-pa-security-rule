@@ -7,7 +7,7 @@ policies = {
     source_addresses      = ["any"]
     destination_addresses = ["10.10.10.10/32", "10.20.20.20/32"]
     action                = "allow"
-    source_users          = ["none"]
+    source_users          = ["user1", "user2", "user3"]
     relative_position     = "top"
   }
 }
