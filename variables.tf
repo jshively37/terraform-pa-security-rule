@@ -1,5 +1,5 @@
 variable "policies" {
-  type = map(object({
+  type = list(object({
     name                  = string
     description           = string
     source_zones          = list(string)

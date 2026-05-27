@@ -1,5 +1,5 @@
 resource "scm_security_rule" "rules" {
-  for_each          = var.policies
+  for_each = { for policy in var.policies : policy.name => policy }
   name              = each.value.name
   description       = each.value.description
   from              = each.value.source_zones

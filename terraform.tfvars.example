@@ -1,5 +1,5 @@
-policies = {
-  "Allow Specific Access To Dropbox" = {
+policies = [
+  {
     name                  = "Allow access To Dropbox"
     description           = "Allow access To Dropbox for specific users"
     source_zones          = ["trust"]
@@ -10,7 +10,7 @@ policies = {
     source_users          = ["user1", "user2"]
     application           = ["dropbox"]
   },
-  "Deny Dropbox" = {
+  {
     name                  = "Deny Dropbox"
     description           = "Deny access to Dropbox for everyone"
     source_zones          = ["trust"]
@@ -21,4 +21,4 @@ policies = {
     source_users          = ["any"]
     application           = ["dropbox"]
   }
-}
+]
