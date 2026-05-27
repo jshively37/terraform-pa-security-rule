@@ -1,0 +1,13 @@
+policies = {
+  "Allow Contractor Access" = {
+    name                  = "Allow Contractor Access"
+    description           = "Allow Contractor Access to Internal Resources"
+    source_zones          = ["trust"]
+    destination_zones     = ["trust"]
+    source_addresses      = ["any"]
+    destination_addresses = ["10.10.10.10/32", "10.20.20.20/32"]
+    action                = "allow"
+    source_users          = ["none"]
+    relative_position     = "top"
+  }
+}
