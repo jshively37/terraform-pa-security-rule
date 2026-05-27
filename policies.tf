@@ -7,7 +7,7 @@ resource "scm_security_rule" "rules" {
   source            = each.value.source_addresses
   destination       = each.value.destination_addresses
   action            = each.value.action
-  source_user       = each.value.source_users
+  source_user       = coalesce(each.value.source_users, ["any"])
   folder            = coalesce(each.value.folder, "Prisma Access")
   position          = coalesce(each.value.position, "pre")
   relative_position = coalesce(each.value.relative_position, "bottom")

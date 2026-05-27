@@ -7,7 +7,7 @@ variable "policies" {
     source_addresses      = list(string)
     destination_addresses = list(string)
     action                = string
-    source_users          = list(string)
+    source_users          = optional(list(string))
     relative_position     = optional(string)
     application           = optional(list(string))
     category              = optional(list(string))

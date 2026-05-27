@@ -18,7 +18,6 @@ policies = [
     source_addresses      = ["any"]
     destination_addresses = ["any"]
     action                = "deny"
-    source_users          = ["any"]
     application           = ["dropbox"]
   }
 ]
