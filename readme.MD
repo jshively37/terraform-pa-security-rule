@@ -13,7 +13,7 @@ By using this software, you agree that:
 Use at your own discretion.
 
 ## Demo
-![media/demo.gif](media/demo.gif)
+![media/dropbox_policy_demo.gif](media/dropbox_policy_demo.gif)
 
 ## Requirements
 

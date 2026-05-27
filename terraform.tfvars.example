@@ -1,13 +1,24 @@
 policies = {
-  "Allow Contractor Access" = {
-    name                  = "Allow Contractor Access"
-    description           = "Allow Contractor Access to Internal Resources"
+  "Allow Specific Access To Dropbox" = {
+    name                  = "Allow access To Dropbox"
+    description           = "Allow access To Dropbox for specific users"
     source_zones          = ["trust"]
-    destination_zones     = ["trust"]
+    destination_zones     = ["untrust"]
     source_addresses      = ["any"]
-    destination_addresses = ["10.10.10.10/32", "10.20.20.20/32"]
+    destination_addresses = ["any"]
     action                = "allow"
-    source_users          = ["user1", "user2", "user3"]
-    relative_position     = "top"
+    source_users          = ["user1", "user2"]
+    application           = ["dropbox"]
+  },
+  "Deny Dropbox" = {
+    name                  = "Deny Dropbox"
+    description           = "Deny access to Dropbox for everyone"
+    source_zones          = ["trust"]
+    destination_zones     = ["untrust"]
+    source_addresses      = ["any"]
+    destination_addresses = ["any"]
+    action                = "deny"
+    source_users          = ["any"]
+    application           = ["dropbox"]
   }
 }
